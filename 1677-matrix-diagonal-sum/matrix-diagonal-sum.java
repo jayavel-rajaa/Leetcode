@@ -6,14 +6,11 @@ class Solution {
 
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
-                if(i==j && n%2==0){
+                if(i==j ){
                     sum = sum+mat[i][j];
                 }
-                if(i==j && n%2!=0){
-                    if(i != half)
-                        sum = sum+mat[i][j];
-                }
-                if(i+j == n-1){
+               
+                if(i+j == n-1 && i != j){
                     sum = sum+mat[i][j];
                 }
         }   
